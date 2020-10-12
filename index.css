@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span {
+  font-family: "Lobster", cursive;
+  color: #ffffff;
+}
+
+input {
+  padding: 7px 20px;
+  border-radius: 7px;
+  border: 1px solid #999999;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999;
+  font-family: "Lobster", cursive;
+}
+
+textarea::placeholder {
+  padding: 10px;
+}
+
+.container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.nav__logo-container {
+  text-align: center;
+  width: 100%;
+}
+
+.nav__menu-container {
+  width: 100%;
+  text-align: center;
+}
+
+.nav__menu-wrap li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.nav__menu-container {
+  padding-bottom: 20px;
+}
+
+.nav {
+  padding-top: 10px;
+  position: relative;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(
+    circle at 10px -1px,
+    transparent 10px,
+    #31aeaa 10px
+  );
+}
+
+.content-wrap {
+  background-image: url(./img/bg-new-1.jpg);
+  background-size: cover;
+}
+
+section {
+  padding: 30px 0;
+}
+
+.title__wrap {
+  text-align: center;
+}
+
+.section__title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.photo__list-item > img {
+  width: 170px;
+  height: 170px;
+  clip-path: polygon(
+    50% 0,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  object-fit: cover;
+}
+
+.photo__list-item {
+  position: relative;
+}
+
+.photo__list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  clip-path: polygon(
+    50% 0,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  background-color: #1d8380;
+  background-position: center center;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.photo__list-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.paragraph {
+  line-height: 25px;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+.nav__menu-wrap a {
+  color: #5cacab;
+  font-size: 1.2em;
+}
+
+.submit {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.form {
+  display: inline-block;
+  padding: 20px 70px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 3px 17px;
+  color: #ffffff;
+  background: linear-gradient(137deg, rgba(6,227,195,1) 0%, rgba(30,169,198,1) 95%);
+  border: 1px solid #1ea9c6;
+}
+
+.section__title::before,
+.section__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(./img/title--2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70px;
+  height: 40px;
+}
+
+.section__title::after {
+  transform-origin: center;
+  transform: rotateY(-200deg);
+  right: -74px;
+  top: 10px;
+}
+
+.section__title::before {
+  top: 7px;
+  left: -77px;
+}
+
+.map__section {
+  position: relative;
+}
+
+.map__section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(
+    circle at 10px -1px,
+    transparent 10px,
+    #ffffff 10px
+  );
+}
+
+.form input {
+  margin-bottom: 20px;
+}
+
+
+.footer__content p {
+    color: #585554;
+}
+
+.footer_container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.map__list-wrap {
+    color: #ffffff;
+}
+
+.map__list {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+    font-size: 1.2em;
+}
